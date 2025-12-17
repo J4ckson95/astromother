@@ -1,0 +1,56 @@
+<svg
+  width="400"
+  height="400"
+  viewBox="0 0 400 400"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+  <!-- Círculo exterior -->
+  <circle
+    cx="200"
+    cy="200"
+    r="160"
+    fill="none"
+    stroke="#000"
+    stroke-width="6"
+  />
+
+  <!-- Luna creciente -->
+  <path
+    d="
+      M230 120
+      A80 80 0 1 0 230 280
+      A60 80 0 1 1 230 120
+    "
+    fill="#F5E6C8"
+  />
+
+  <!-- Estrella -->
+  <polygon
+    points="
+      200,160
+      210,190
+      240,200
+      210,210
+      200,240
+      190,210
+      160,200
+      190,190
+    "
+    fill="#FFD700"
+  />
+
+  <!-- Texto -->
+  <text
+    x="200"
+    y="330"
+    text-anchor="middle"
+    font-size="32"
+    font-family="serif"
+    letter-spacing="2"
+    fill="#000"
+  >
+    ASTRA
+  </text>
+
+</svg>
