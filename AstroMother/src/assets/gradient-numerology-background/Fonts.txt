@@ -1,0 +1,5 @@
+Fonts used in this design:
+
+Font: Jost
+Author: Owen Earl
+Url: https://fonts.google.com/specimen/Jost

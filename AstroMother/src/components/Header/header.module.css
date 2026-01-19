@@ -1,0 +1,179 @@
+.container_head {
+    container: head / inline-size;
+    width: 100vw;
+
+    .top_head {
+        display: none;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+
+        .logo {
+            width: 260px;
+            height: 50px;
+            object-fit: fill;
+            margin-left: 2vw;
+        }
+
+        .PNGmenu {
+            width: 35px;
+            height: 30px;
+            margin-right: 5vw;
+            cursor: pointer;
+        }
+
+        nav {
+            display: none;
+        }
+    }
+
+    .container_Promo {
+        position: relative;
+
+        img {
+            height: 30vh;
+            width: 100vw;
+        }
+
+        h1 {
+            color: white;
+            font-weight: 900;
+            font-size: 2rem;
+            text-wrap: wrap;
+            text-align: center;
+            position: absolute;
+            top: 12%;
+            left: 3%;
+        }
+
+    }
+
+}
+
+@container head (width > 400px) {
+    .container_head {
+        .container_Promo {
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@container head (width > 700px) {
+    .container_head {
+        .head {
+            .logo {
+                width: 350px;
+                height: 60px;
+            }
+        }
+
+        .container_Promo {
+            h1 {
+                font-size: 3rem;
+                top: 20%;
+                left: 5%;
+            }
+        }
+    }
+}
+
+@container head (width > 1000px) {
+    .container_head {
+        .head {
+            .logo {
+                width: 500px;
+                height: 90px;
+            }
+        }
+
+        .container_Promo {
+            img {
+                height: 50vh;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@container head (width > 1200px) {
+    .container_head {
+        .top_head {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 2vw;
+            background-color: #7e67f57a;
+
+            ol {
+                display: flex;
+
+                li {
+                    margin-inline: 10px;
+                }
+
+                img {
+                    width: 25px;
+                }
+            }
+
+            .buttons {
+                button {
+                    color: white;
+                    font-family: var(--font-text);
+                    font-weight: 900;
+                    font-size: .9rem;
+                    padding: 1.2rem;
+                }
+
+                button:nth-child(1) {
+                    background-color: #2A1E5C;
+                    margin-right: 1vw;
+                }
+
+                button:nth-child(2) {
+                    background-color: #25D366;
+                    margin-right: 10vw;
+                }
+            }
+        }
+
+        .head {
+
+            .logo {
+                width: 600px;
+                margin-left: 10vw;
+            }
+
+            .PNGmenu {
+                display: none;
+            }
+
+            nav {
+                display: block;
+                margin-right: 10vw;
+
+                ol {
+                    display: flex;
+                    gap: 1rem;
+                    margin-right: 5vw;
+
+                    li {
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                        color: #E3A5C7;
+                    }
+                }
+            }
+        }
+    }
+}

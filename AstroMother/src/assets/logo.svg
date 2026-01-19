@@ -1,56 +1,72 @@
 <svg
-  width="400"
-  height="400"
-  viewBox="0 0 400 400"
+  width="800"
+  height="300"
+  viewBox="0 0 1500 300"
   xmlns="http://www.w3.org/2000/svg"
 >
 
-  <!-- Círculo exterior -->
-  <circle
-    cx="200"
-    cy="200"
-    r="160"
-    fill="none"
-    stroke="#000"
-    stroke-width="6"
-  />
+  <!-- Grupo del ícono -->
+  <g transform="translate(150,150)">
+    
+    <!-- Círculo exterior -->
+    <circle
+      cx="0"
+      cy="0"
+      r="110"
+      fill="none"
+      stroke="#000"
+      stroke-width="10"
+    />
 
-  <!-- Luna creciente -->
-  <path
-    d="
-      M230 120
-      A80 80 0 1 0 230 280
-      A60 80 0 1 1 230 120
-    "
-    fill="#F5E6C8"
-  />
+    <!-- Luna creciente -->
+    <path
+      d="
+        M20 -80
+        A80 80 0 1 0 20 80
+        A60 80 0 1 1 20 -80
+      "
+      fill="#F5E6C8"
+    />
 
-  <!-- Estrella -->
-  <polygon
-    points="
-      200,160
-      210,190
-      240,200
-      210,210
-      200,240
-      190,210
-      160,200
-      190,190
-    "
-    fill="#FFD700"
-  />
+    <!-- Estrella -->
+    <polygon
+      points="
+        0,-45
+        10,-15
+        40,0
+        10,15
+        0,45
+        -10,15
+        -40,0
+        -10,-15
+      "
+      fill="#FFD700"
+    />
 
-  <!-- Texto -->
+  </g>
+
+  <!-- Texto de la marca -->
   <text
-    x="200"
-    y="330"
-    text-anchor="middle"
-    font-size="32"
+    x="320"
+    y="200"
+    font-size="130"
     font-family="serif"
-    letter-spacing="2"
-    fill="#000"
+    fill="#FFD700"
+    letter-spacing="1.5"
   >
-    ASTRA
+    Yaneth
+  </text>
+
+  <text
+    x="720"
+    y="200"
+    font-size="130"
+    font-family="serif"
+    fill="#B8A9FF"
+    letter-spacing="2"
+  >
+    Estelar
   </text>
 
 </svg>
+
